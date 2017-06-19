@@ -1,0 +1,467 @@
+.container {
+	width: 1366px;
+	background-color: #1a1a1a;
+}
+.clearfix {
+  clear: both;
+}
+::-webkit-input-placeholder{
+	color: #ffffff;
+}
+.size{
+	height: 4335px;
+}
+
+button{
+	border: none;
+	background-color: transparent;
+	outline: 4px solid #0566E4;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 10px;
+}
+button:hover{
+	background-color: #0566E4;
+}
+
+input{
+	border: none;
+	background-color: transparent;
+	outline: 3px solid #ffffff;
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+h1{
+	font-family: "Montserrat", sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 25px 0px;
+	margin: 0px;
+}
+h2{
+	font-family: "Montserrat", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 0px;
+}
+p{
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	color: #ffffff;	
+	padding: 10px 0px;
+	margin: 0px;
+}
+h3{
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 0px;
+}
+
+
+span{
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.7);
+	position: relative;
+	padding:15px 20px;
+}
+span:hover{
+	background: rgba(5, 102, 228, 0.7);
+}
+.active{
+
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.title{
+	text-align: left;
+	padding-left: 100px;
+	margin: 0px;
+	padding-top: 50px;
+}
+.float-left{
+	position: relative;
+	float: left;
+}
+.float-right{
+	position: relative;
+	float: right;
+}
+
+.navbar{
+	height: 210px;
+}
+.navbar .banner{ 
+	display: inline-block;
+	position: absolute;
+}
+.navbar .logo{
+	display: inline-block;
+	top: 35px;
+	left: 50px;
+}
+.navbar ul li{
+	display: inline-block;
+}
+.navbar ul{
+	width: 860px;
+	top: 85px;
+}
+.navbar a{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	padding-left: 15px;
+}
+.fa-search {
+	color: #ffffff;
+}
+.navbar .searchbar{
+	display: inline-block;
+	top: 70px;
+	right: 50px;
+}
+.search{
+	border: none;
+	outline: none;
+	border-bottom: 3px solid #ffffff;
+	width: 155px;
+	background-color: transparent; 
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.featured-news{
+	height: 460px;
+	padding: 0px 100px 0px 100px;
+}
+.featured-1 span{
+	bottom: 53px;
+	width: 700px;
+}
+.featured-2{
+	width: 420px;
+	height: 189px;
+}
+.featured-2 span{
+	bottom: 73px;
+	width: 380px;
+}
+.featured-3{
+	padding-top: 20px;
+	display: inline-block;
+}
+.featured-3 span{
+	bottom: 53px;
+	width: 380px;
+}
+
+.comic-news{
+	padding: 25px 169px 40px 169px;
+}
+.comic-1{
+	width: 270px;
+	height: 400px;
+
+}
+.comic-2{
+	width: 270px;
+	padding-left: 105px;
+}
+.comic-3{
+	width: 270px;
+	padding-left: 105px;
+}
+.comic-review{
+	display: inline-block;
+	position: relative;
+
+	left: 560px;
+}
+.comic-review p{
+	display: inline-block;
+	color: #0566E4;
+	width: 265px;
+	position: relative;
+	top: 10px;
+}
+.comic-review button{
+	display: inline-block;
+}
+
+.movie-news{
+	padding: 0px 190px 0px 190px;
+}
+.transww{
+	position: absolute;
+	top: 1700px;
+	left: 1080px;
+}
+.movie-news .movie-2{
+	padding-right: 68px;
+}
+.movie-news .movie-3{
+	padding-right: 68px;
+}
+.movie-span{
+	width: 240px;
+	position: relative;
+	bottom: 73px;
+}
+
+.tv-news{
+	height: 680px;
+	padding: 0px 125px 0px 185px;
+}
+
+.tv-2{
+	padding-bottom: 28px; 
+}
+
+.tv-3 span{
+	bottom: 53px;
+	width: 270px;
+}
+.transsg{
+	position: absolute;
+	top: 2590px;
+	left: 20px;
+}
+
+.gaming-news{
+	height: 680px;
+	padding: 0px 100px 0px 100px;
+}
+.game-span{
+	bottom: 53px;
+	width: 548px;
+}
+.game-2{
+	padding-left: 20px;
+}
+.game-3 button{
+	position: relative;
+	bottom: 40px;
+}
+.footer{
+	height: 218px;
+	margin: 0px;
+}
+.footer .sites{
+	position: relative;
+	bottom: 180px;
+	padding-left: 40px;
+}
+.footer .dc-ent{
+	position: relative;
+	bottom: 180px;
+	padding-left: 40px;
+}
+.footer .newsletter{
+	position: relative;
+	bottom: 210px;
+	padding-left: 40px;
+}
+.footer a{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+}
+footer{
+	width: 1306px;
+	height: 105px;
+	background-color: #333333;
+	margin: 0px;
+	padding: 0px 30px;
+}
+
+footer a{
+	text-decoration: none;
+	color: #0566E4;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+footer p{
+	font-size: 14px;
+}
+
+footer .follow-us{
+	position: relative;
+	bottom: 160px;
+}
+.follow-us a{
+	padding-left: 10px;
+}
+footer .copywrite{
+	position: relative;
+	bottom: 160px;
+}
+
+
+/* CHARACTER PAGE */
+.justice-league{
+	padding: 50px 40px 100px 40px;
+}
+
+.heroes{
+	margin: 0px;
+	height: 300px;
+}
+.heroes h1{
+	position: relative;
+	bottom: 230px;
+	right: 200px;
+}
+.villains{
+	margin: 0px;
+	height: 300px;
+}
+.villains h1{
+	position: relative;
+	bottom:230px;
+	left: 200px;
+}
+
+.browse-char{
+	padding: 50px 100px;
+}
+.browse-char .fa-search{
+	font-size: 20px;
+}
+.character-icons{
+	width: 900px;
+}
+.icons{
+	padding-left: 15px;
+}
+.icons span{
+	bottom: 53px;
+	width: 120px;
+}
+.filters{
+	padding-right: 15px;
+	position: relative;
+	bottom: 400px;
+}
+.toolbar{
+	text-align: right;
+	padding: 0px 50px 25px 0px;
+}
+.A-Z{
+	position: relative;
+	top: 10px;
+	margin-left: 20px;
+	background-color: transparent;
+	border: none;
+	outline: 3px solid #0566E4;
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 20px 10px;
+}
+.page-number{
+	text-align: center;
+}
+.page-number a {
+	font-family: "Lato", sans-serif;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.page-number a.active {
+    color: #0566E4;
+}
+
+/*BATMAN*/
+.char-name{
+	
+	margin: 0px;
+	position: relative;
+	top: 0px;
+}
+.char-name h1{
+	position: relative;
+	bottom: 300px;
+	left: 100px;
+}
+
+.bio{
+	width: 735px;
+}
+.info {
+	line-height: 20px;
+	padding:25px 80px;
+}
+.info ul li{
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	margin: 0px;
+	line-height: 35px;
+	padding-right: 25px;
+}
+.stats-2{
+	padding-left: 50px;
+}
+.information{
+	width: 890px;
+}
+
+.latest-comics{
+	padding: 100px 45px 100px 45px;
+}
+.latest-comics span{
+	width: 200px;
+	bottom:73px;
+}
+.comicB{
+	padding-right: 10px;
+	margin: 0px;
+}
+.latest-comics button{
+	margin-left: 1120px;
+}
+
+.latest-app{
+	padding:0px 190px 100px 190px;
+}
+.latest-left{
+	width: 600px;
+}
+.latest-top span{
+	width: 250px;
+	bottom: 73px;
+}
+.latest-right span{
+	width:320px;
+	bottom: 70px;
+}
+.latest-right{
+	padding-left: 25px;
+}
+.latest-top .latestB-1{
+	padding-right: 5px;
+}
+.latest-bottom{
+	position: relative;
+	bottom: 50px;
+}
