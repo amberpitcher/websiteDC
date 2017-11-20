@@ -1,4 +1,4 @@
-.container {
+body, .container {
 	width: 100%;
 	background-color: #1a1a1a;
 }
@@ -9,7 +9,7 @@
 	color: #ffffff;
 }
 .size{
-	height: 4335px;
+	height: auto;
 }
 
 button{
@@ -76,9 +76,6 @@ span{
 }
 span:hover{
 	background: rgba(5, 102, 228, 0.7);
-}
-.active{
-
 }
 
 .inline-block{
