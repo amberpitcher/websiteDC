@@ -8,9 +8,6 @@ body, .container {
 ::-webkit-input-placeholder{
 	color: #ffffff;
 }
-.size{
-	height: auto;
-}
 
 button{
 	border: none;
