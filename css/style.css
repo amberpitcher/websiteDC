@@ -1,10 +1,18 @@
-body, .container {
-	width: 100%;
-	background-color: #1a1a1a;
+*{
+	box-sizing: border-box;
 }
+
+body {
+	background-color: #1a1a1a;
+	margin: 0;
+	line-height: 0;
+	overflow-x: hidden;
+}
+
 .clearfix {
   clear: both;
 }
+
 ::-webkit-input-placeholder{
 	color: #ffffff;
 }
@@ -19,8 +27,10 @@ button{
 	color: #ffffff;
 	padding: 10px;
 }
+
 button:hover{
 	background-color: #0566E4;
+	border-radius: 0;
 }
 
 input{
@@ -64,13 +74,16 @@ h3{
 	margin: 0px;
 }
 
-
 span{
-	display: inline-block;
 	background: rgba(0, 0, 0, 0.7);
-	position: relative;
-	padding:15px 20px;
+	padding: 25px;
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	width: 100%;
+	line-height: 1;
 }
+
 span:hover{
 	background: rgba(5, 102, 228, 0.7);
 }
@@ -85,50 +98,63 @@ span:hover{
 	margin: 0px;
 	padding-top: 50px;
 }
+
 .float-left{
 	position: relative;
 	float: left;
 }
+
 .float-right{
 	position: relative;
 	float: right;
 }
 
-.navbar{
+.active{
+	color: #0566E4;
+}
+
+nav{
 	height: 210px;
+	background-image: url(../images/navbar.png);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
 }
-.navbar .banner{ 
-	display: inline-block;
-	position: absolute;
-}
-.navbar .logo{
+
+
+nav .logo{
 	display: inline-block;
 	top: 35px;
 	left: 50px;
+	width:auto;
+	height: 70%;
 }
-.navbar ul li{
+
+nav ul li{
 	display: inline-block;
 }
-.navbar ul{
-	width: 860px;
-	top: 85px;
-}
-.navbar a{
+
+nav a{
 	text-decoration: none;
 	color: #ffffff;
 	font-family: "Lato", sans-serif;
 	font-weight: bold;
 	font-size: 25px;
-	padding-left: 15px;
+	padding-left: 25px;
 }
+
 .fa-search {
 	color: #ffffff;
 }
-.navbar .searchbar{
+
+nav .searchbar{
 	display: inline-block;
 	top: 70px;
 	right: 50px;
 }
+
 .search{
 	border: none;
 	outline: none;
@@ -141,228 +167,409 @@ span:hover{
 }
 
 .featured-news{
-	height: 460px;
-	padding: 0px 100px 0px 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 550px;
+	padding: 50px 100px;
+	margin-bottom: 100px;
 }
-.featured-1 span{
-	bottom: 53px;
-	width: 700px;
+
+.featured-1{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background-image: url(../images/rebirth.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 25px;
 }
+
+
 .featured-2{
-	width: 420px;
-	height: 189px;
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
-.featured-2 span{
-	bottom: 73px;
-	width: 380px;
+
+.featured-2 div{
+	height: 50%;
+	position: relative;
 }
-.featured-3{
-	padding-top: 20px;
-	display: inline-block;
-}
-.featured-3 span{
-	bottom: 53px;
-	width: 380px;
+
+.featured-2 div:first-child{
+	background-image: url(../images/awest.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 10px;
+}	
+
+.featured-2 div:last-child{
+	background-image: url(../images/75yrs.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .comic-news{
-	padding: 25px 169px 40px 169px;
+		padding: 50px 100px;
+		height: auto;
+		line-height: 1;
+		margin-bottom: 100px;
 }
-.comic-1{
-	width: 270px;
-	height: 400px;
 
+.comics{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 250px;
 }
-.comic-2{
-	width: 270px;
-	padding-left: 105px;
+
+.comic-news .comic{
+	width: 33.333%;
+	height: 500px;
+	line-height: 1;
+	margin: 0 100px;
 }
-.comic-3{
-	width: 270px;
-	padding-left: 105px;
+
+.comic-news .comic img{
+	width: 100%;
+	height: auto;
+	padding-bottom: 10px;
 }
+
+.comic-news .comic h2{
+	width: 100%;
+}
+
+
 .comic-review{
-	display: inline-block;
-	position: relative;
-
-	left: 560px;
+	width: 100%;
+	text-align: right;
 }
+
 .comic-review p{
 	display: inline-block;
 	color: #0566E4;
-	width: 265px;
-	position: relative;
-	top: 10px;
+	padding-right: 25px;
 }
 .comic-review button{
 	display: inline-block;
 }
 
 .movie-news{
-	padding: 0px 190px 0px 190px;
+	padding: 50px 100px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
 }
+
 .transww{
 	position: absolute;
-	top: 1700px;
-	left: 1080px;
+	top: -100px;
+	left: 75%;
+	z-index: 99;
 }
+
+.movie-news .movie-1{
+	width: 75%;
+	height: 400px;
+	background-image: url(../images/wonderbanner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 10px;
+}
+
 .movie-news .movie-2{
-	padding-right: 68px;
+	width: 75%;
+	height: 200px;
+	display: flex;
+	flex-direction: row;
 }
-.movie-news .movie-3{
-	padding-right: 68px;
-}
-.movie-span{
-	width: 240px;
+
+.movie-news .movie-2 div{
+	width: 33.333%;
+	overflow: hidden;
 	position: relative;
-	bottom: 73px;
+}
+
+.movie-news .movie-2 div:nth-child(2){
+	margin: 0 10px;
+}
+
+.movie-news .movie-2 div img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 .tv-news{
-	height: 680px;
-	padding: 0px 125px 0px 185px;
+	padding: 50px 100px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 100px;	
+}
+
+.tv-1{
+	height: 550px;
+	width: 50%;
+	margin-right: 25px;
+}
+
+.tv-1 iframe{
+	width: 100%;
+	min-height: 100%;
+	height: auto;
 }
 
 .tv-2{
-	padding-bottom: 28px; 
+	width: 25%;
 }
 
-.tv-3 span{
-	bottom: 53px;
-	width: 270px;
+.tv-2 div{
+	width: 100%;
+	height: 50%;
 }
+
+.tv-2 div:first-child{
+	margin-bottom: 10px;
+}
+
+.tv-2 div:last-child{
+	position: relative;
+	background-image: url(../images/supergirl.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.tv-2 iframe{
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+}
+
 .transsg{
 	position: absolute;
-	top: 2590px;
-	left: 20px;
+	top: 50px;
+	left: 0;
+	z-index: 99;
 }
 
 .gaming-news{
-	height: 680px;
-	padding: 0px 100px 0px 100px;
-}
-.game-span{
-	bottom: 53px;
-	width: 548px;
-}
-.game-2{
-	padding-left: 20px;
-}
-.game-3 button{
+	padding: 50px 100px;
 	position: relative;
-	bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 100px;
+	line-height: 1;
 }
-.footer{
-	height: 218px;
+
+.gaming-news .game-1, .gaming-news .game-2{
+	width: 25%;
+	margin: 50px;
+	height: 550px;
+}
+
+.gaming-news .game-3{
+	width: 50%;
+	height: 450px;
+	margin: 50px;
+	position: relative;
+	background-image: url(../images/injustice2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gaming-news .game-3 button{
+	position: absolute;
+	bottom: -60px;
+	right: 0;
+}
+
+
+footer{
+	width: 100%;
+	height: 300px;
 	margin: 0px;
+	background-image: url(../images/DCfooter.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 25px;
 }
-.footer .sites{
-	position: relative;
-	bottom: 180px;
-	padding-left: 40px;
-}
-.footer .dc-ent{
-	position: relative;
-	bottom: 180px;
-	padding-left: 40px;
-}
-.footer .newsletter{
-	position: relative;
-	bottom: 210px;
-	padding-left: 40px;
-}
-.footer a{
-	text-decoration: none;
+
+footer ul li{
 	color: #ffffff;
 	font-family: "Lato", sans-serif;
 	font-size: 18px;
-	line-height: 20px;
-}
-footer{
-	width: 1306px;
-	height: 105px;
-	background-color: #333333;
-	margin: 0px;
-	padding: 0px 30px;
+	display: block;
+	line-height: 1;
+	margin-bottom: 10px;
 }
 
-footer a{
+
+footer .sites ul{
+	display: block;
+	margin-bottom: 10px;
+}
+
+footer .dc-ent{
+	margin: 0 100px;
+}
+
+footer .newsletter input{
+	margin: 10px 0;
+}
+
+footer .newsletter button{
+	margin-top: 10px;
+}
+
+footer .newsletter h2{
+	margin-bottom: 10px;
+}
+
+.sub-footer{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+}
+
+.sub-footer .follow-us{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-footer .follow-us img{
+	height: 40px;
+	width: auto;
+	padding-left: 10px;
+}
+
+.sub-footer a{
 	text-decoration: none;
 	color: #0566E4;
 	font-family: "Lato", sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 }
-footer p{
-	font-size: 14px;
-}
-
-footer .follow-us{
-	position: relative;
-	bottom: 160px;
-}
-.follow-us a{
-	padding-left: 10px;
-}
-footer .copywrite{
-	position: relative;
-	bottom: 160px;
-}
-
 
 /* CHARACTER PAGE */
 .justice-league{
-	padding: 50px 40px 100px 40px;
+	padding: 50px 100px;
+	width: 100%;
+	height: 550px;
+	margin-bottom: 100px;
+}
+
+.justice-league img{
+	max-width: 100%;
+	width: 14%;
+	min-height: 100%;
+	height: auto;
 }
 
 .heroes{
-	margin: 0px;
-	height: 300px;
-}
-.heroes h1{
+	height: 550px;
+	padding: 50px 100px;
 	position: relative;
-	bottom: 230px;
-	right: 200px;
+	background-image: url(../images/heroes.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
+
 .villains{
-	margin: 0px;
-	height: 300px;
-}
-.villains h1{
+	height: 550px;
+	padding: 50px 100px;
 	position: relative;
-	bottom:230px;
-	left: 200px;
+	background-image: url(../images/villains.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 100px;
 }
+
 
 .browse-char{
 	padding: 50px 100px;
+	width: 100%;
+	height: auto;
 }
+
 .browse-char .fa-search{
 	font-size: 20px;
 }
+
+.split{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+}
+
 .character-icons{
-	width: 900px;
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
+
 .icons{
-	padding-left: 15px;
-}
-.icons span{
-	bottom: 53px;
-	width: 120px;
-}
-.filters{
-	padding-right: 15px;
+	width: 18%;
+	height: 300px;
 	position: relative;
-	bottom: 400px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
+
+.icons img{
+	object-fit: cover;
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+}
+
+.filters{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15%;
+	height: 200px;
 }
 .toolbar{
-	text-align: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
 	padding: 0px 50px 25px 0px;
 }
+
 .A-Z{
 	position: relative;
 	top: 10px;
-	margin-left: 20px;
+	margin-left: 50px;
 	background-color: transparent;
 	border: none;
 	outline: 3px solid #0566E4;
@@ -386,76 +593,213 @@ footer .copywrite{
 }
 
 /*BATMAN*/
-.char-name{
-	
-	margin: 0px;
-	position: relative;
-	top: 0px;
+.char-name-wonder{
+	width: 100%;
+	height: 550px;
+	background-image: url(../images/wonderwoman-banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 100px;
 }
-.char-name h1{
-	position: relative;
-	bottom: 300px;
-	left: 100px;
+
+.char-name-supe{
+	width: 100%;
+	height: 550px;
+	background-image: url(../images/superman-banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 100px;
+}
+
+.char-name{
+	width: 100%;
+	height: 550px;
+	background-image: url(../images/batman-banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 100px;
 }
 
 .bio{
-	width: 735px;
+	width: 50%;
+	margin-bottom: 100px;
 }
+
 .info {
-	line-height: 20px;
-	padding:25px 80px;
+	line-height: 1;
+	width: 100%;
+	height: auto;
+	padding: 100px;
+	position: relative;
+	margin-bottom: 100px;
 }
 .info ul li{
 	font-family: "Lato", sans-serif;
 	font-size: 18px;
 	color: #ffffff;
 	margin: 0px;
-	line-height: 35px;
+	line-height: 1;
 	padding-right: 25px;
 }
-.stats-2{
-	padding-left: 50px;
-}
+
+
 .information{
-	width: 890px;
+	width: 65%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.stats-1{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 50px;
+}
+
+.stats-2{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 50px;
+}
+
+.transbat{
+	position: absolute;
+	top: 50px;
+	right: 200px;
+	height: 550px;
+}
+
+.transsupe{
+	position: absolute;
+	top: 50px;
+	right: 200px;
+	height: 550px;
+}
+
+.transww-2{
+	position: absolute;
+	top: 50px;
+	right: 200px;
+	height: 550px;
+}
+
+
+.latestCom{
+	width: 100%;
+	position: relative;
 }
 
 .latest-comics{
-	padding: 100px 45px 100px 45px;
+	width: 100%;
+	padding: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
-.latest-comics span{
-	width: 200px;
-	bottom:73px;
-}
+
 .comicB{
-	padding-right: 10px;
-	margin: 0px;
+	width: 20%;
+	height: 400px;
+	margin-right: 25px;
+	position: relative;
+	overflow: hidden;
 }
-.latest-comics button{
-	margin-left: 1120px;
+
+.comicB img{
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.latestCom button{
+	position: absolute;
+	bottom: 0;
+	right: 100px;
 }
 
 .latest-app{
-	padding:0px 190px 100px 190px;
+	padding: 100px 200px;
+	margin-bottom: 100px;
+	width: 100%;
+	height: 750px;
+	display: flex;
+	flex-direction: row;
 }
+
 .latest-left{
-	width: 600px;
+	width: 65%;
+	margin-right: 10px;
 }
-.latest-top span{
-	width: 250px;
-	bottom: 73px;
-}
-.latest-right span{
-	width:320px;
-	bottom: 70px;
-}
+
+
 .latest-right{
-	padding-left: 25px;
-}
-.latest-top .latestB-1{
-	padding-right: 5px;
-}
-.latest-bottom{
+	width: 35%;
+	height: 100%;
 	position: relative;
-	bottom: 50px;
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+.latest-right img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.latest-top {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+
+.latest-top .latestB-1, .latest-top .latestB-2{
+	width: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+.latest-top .latestB-1{
+	margin-right: 10px;
+}
+
+.latest-top .latestB-2{
+	margin-left: 10px;
+}
+
+.latest-top img{
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.latest-bottom{
+	margin-top: 10px;
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+}
+
+.latest-bottom iframe{
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	object-fit: cover;
 }

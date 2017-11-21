@@ -9,19 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 </head>
 <body>
-	<div class="container">
 
 	<!--NAVBAR-->
-		<section class="navbar"> 
-				<section class="banner">
-					<img src="images/navbar.png" width="1366">
-				</section>
-				<img class="logo float-left" src="images/logo.png" width="150">
-				<form class="searchbar float-right">
-					<input type="text" placeholder="" class="search">
-					<a href="#"><i class="fa fa-search"></i></a>
-				</form>
-				<ul class="float-right">
+		<nav> 
+				<img class="logo" src="images/logo.png">
+				<ul>
 					<a href="index.html"><li class="active">HOME</li></a>
 					<a href="characters.html"><li>CHARACTERS</li></a>
 					<a href="#"><li>COMICS</li></a>
@@ -30,17 +22,20 @@
 					<a href="#"><li>GAMES</li></a>
 					<a href="#"><li>SHOP</li></a>
 				</ul>
-		</section>
+				<form class="searchbar">
+					<input type="text" placeholder="" class="search">
+					<a href="#"><i class="fa fa-search"></i></a>
+				</form>				
+		</nav>
 
 	<!--BANNER-->
-		<section class="char-name">
-			<img src="images/superman-banner.png">
+		<section class="char-name-supe">
 			<h1>SUPERMAN</h1>
 		</section>
 		
 	<!--BIO & INFO-->
 		<section class="info">
-		<div class="text inline-block">
+		<div class="text">
 			<div class="bio">
 				<h2>BIO</h2><br>
 				<p>Superman is the last of a dying race from the planet Krypton. His Krypton name is Kal-El. <br><br>
@@ -49,30 +44,31 @@
 
 				It would be at The Daily Planet that Clark would first don the Superman costume and save Metropolis time and again. He also met Lois Lane, a fellow reporter, and became romantically involved with her.</p><br><br><br><br>
 			</div>
+
+			<h2>INFORMATION</h2><br>
 			<div class="information">
-				<h2>INFORMATION</h2><br>
-			<div class="stats-1 inline-block">
-				<ul class="inline-block">
+			<div class="stats-1">
+				<ul>
 					<li>REAL NAME</li>
 					<li>OCCUPATION</li>
 					<li>BASE</li>
 					<li>EYE COLOUR</li>
 				</ul>
-				<ul class="inline-block">
+				<ul>
 					<li>Clark Kent / Kal-El</li>
 					<li>Reporter at The Daily Planet</li>
 					<li>Metropolis</li>
 					<li>Blue</li>
 				</ul>
 			</div>
-			<div class="stats-2 inline-block">
-				<ul class="inline-block">
+			<div class="stats-2">
+				<ul>
 					<li>HAIR COLOUR</li>
 					<li>HEIGHT</li>
 					<li>WEIGHT</li>
 					<li>FIRST APPEARANCE</li>
 				</ul>
-				<ul class="inline-block">
+				<ul>
 					<li>Black</li>
 					<li>6ft 3in</li>
 					<li>220 lb</li>
@@ -81,12 +77,15 @@
 			</div>
 			</div>
 			</div>
-			<img class="inline-block" src="images/transsm.png" height="550">
+			<img class="transsupe" src="images/transsm.png">
 		</section>
 
 	<!--LATEST COMICS-->
-		<section class="latest-comics">
+		<section class="title">
 			<h1>LATEST COMICS</h1>
+		</section>
+		<div class="latestCom">
+		<section class="latest-comics">
 			<div class="comicB inline-block">
 				<img src="images/comicS-1.png">
 				<h3><span>Superman: The Rebirth</span></h3>
@@ -107,73 +106,77 @@
 				<img src="images/comicS-5.png">
 				<h3><span>Absolute Justice League: Origin</span></h3>
 			</div>
-			<button>SEE MORE</button>
 		</section>
+		<button>SEE MORE</button>
+		</div>
 
 	<!--LATEST APPEARANCES-->
-		<section class="latest-app">
+		<section class="title">
 			<h1>LATEST APPEARANCES</h1>
+		</section>
+		<section class="latest-app">
 			<div class="latest-left">
-			<div class="latest-top float-left">
-				<div class="latestB-1 inline-block">
+			<div class="latest-top">
+				<div class="latestB-1">
 					<img src="images/latestS-1.png">
 					<h3><span>Superman in Action Comics #985</span></h3>
 				</div>
-				<div class="inline-block">	
+				<div class="latestB-1">	
 					<img src="images/latestS-2.png">
 					<h3><span>Superman in Legacy Part One</span></h3>
 				</div>
 			</div>
-			<div class="latest-bottom inline-block float-left">
+			<div class="latest-bottom">
 				<iframe width="590" height="260" src="https://www.youtube.com/embed/9hklKfEEsxc" frameborder="0" allowfullscreen></iframe>
 			</div>
 			</div>
-			<div class=" latest-right inline-block">
-				<img class="float-right" src="images/latestS-3.png">
+			<div class=" latest-right">
+				<img src="images/latestS-3.png">
 				<h3><span>In Other News: Lois Lane Borrows The Batmobile</span></h3>
 			</div>
 		</section>
 
 		<!--FOOTER-->
-			<section class="footer">
-				<img class="inline-block" src="images/DCfooter.png">
-				<ul class="sites inline-block float-left">
+			<footer>
+				<div class="sites">
 					<h2>SITES</h2>
-					<a href="#" onclick="return false;"><li>DC</li></a>
-					<a href="#" onclick="return false;"><li>Verigo</li></a>
-					<a href="#" onclick="return false;"><li>MAD Magazine</li></a>
-					<a href="#" onclick="return false;"><li>DC Kids</li></a>
-					<a href="#" onclick="return false;"><li>DC Entertainment</li></a>
-				</ul>
-				<ul class="dc-ent inline-block float-left">
+					<ul>
+						<li>DC</li>
+						<li>Verigo</li>
+						<li>MAD Magazine</li>
+						<li>DC Kids</li>
+						<li>DC Entertainment</li>
+					</ul>
+				</div>	
+				<div class="dc-ent">
 					<h2>DC ENTERTAINMENT</h2>
-					<a href="#" onclick="return false;"><li>About Us</li></a>
-					<a href="#" onclick="return false;"><li>Jobs</li></a>
-					<a href="#" onclick="return false;"><li>Subscriptions</li></a>
-					<a href="#" onclick="return false;"><li>Talent Workshop</li></a>
-					<a href="#" onclick="return false;"><li>Help</li></a>
-				</ul>
-				<form class="newsletter subscribe float-left">
+					<ul>
+						<li>About Us</li>
+						<li>Jobs</li>
+						<li>Subscriptions</li>
+						<li>Talent Workshop</li>
+						<li>Help</li>
+					</ul>
+				</div>
+				<form class="newsletter subscribe">
 					<h2>NEWSLETTER</h2>
 					<input type="text" placeholder="name"><br>
 					<input type="text" placeholder="email"><br>
 					<button>SUBSCRIBE</button>
 				</form>
-			</section>
+			</footer>
 			
-			<footer>
-				<div class="copywrite float-left">
-				<p>All Site Content and © 2017 DC Entertainment, unless otherwise noted here. All rights reserved. &nbsp <a href="#">Terms & Conditions</a> &nbsp <a href="#">Privacy Policy</a></p>
+			<div class="sub-footer">
+				<div class="copywrite">
+					<p>All Site Content and © 2017 DC Entertainment, unless otherwise noted here. All rights reserved.&nbsp <a href="#">Terms & Conditions</a> &nbsp <a href="#">Privacy Policy</a></p>
 				</div>
 	
-				<div class="follow-us inline-block float-right">
-				<h2 class="inline-block">FOLLOW US</h2>
-				<a class="inline-block" href="https://www.facebook.com/dccomics"><img src="images/fbicon.png" height="30"></a>
-				<a href="http://www.dccomics.com/twitter-directory"><img src="images/twittericon.png" height="30"></a>
-				<a href="https://www.youtube.com/user/DCEntertainmentTV"><img src="images/yticon.png" height="30"></a>
+				<div class="follow-us">
+					<h2>FOLLOW US</h2>
+					<a href="https://www.facebook.com/dccomics"><img src="images/fbicon.png"></a>
+					<a href="http://www.dccomics.com/twitter-directory"><img src="images/twittericon.png"></a>
+					<a href="https://www.youtube.com/user/DCEntertainmentTV"><img src="images/yticon.png"></a>
 				</div>
-			</footer>
-
-	</div>
+			</div>	
 </body>
 </html>

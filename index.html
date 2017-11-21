@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-<html class="size">
+<html>
 <head>
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<title>DC | Welcome to DC</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-
 	<!--NAVBAR-->
-		<section class="navbar"> 
-				<section class="banner">
-					<img src="images/navbar.png" width="1366">
-				</section>
-				<img class="logo float-left" src="images/logo.png" width="150">
-				<form class="searchbar float-right">
-					<input type="text" placeholder="" class="search">
-					<a href="#"><i class="fa fa-search"></i></a>
-				</form>
-				<ul class="float-right">
+		<nav> 
+				<img class="logo" src="images/logo.png">
+				<ul>
 					<a href="index.html"><li class="active">HOME</li></a>
 					<a href="characters.html"><li>CHARACTERS</li></a>
 					<a href="#"><li>COMICS</li></a>
@@ -30,28 +22,27 @@
 					<a href="#"><li>GAMES</li></a>
 					<a href="#"><li>SHOP</li></a>
 				</ul>
-				<div class="clearfix"></div>
-		</section>
+				<form class="searchbar">
+					<input type="text" placeholder="" class="search">
+					<a href="#"><i class="fa fa-search"></i></a>
+				</form>				
+		</nav>
 
 		<!--FEATURED NEWS-->
 			<section class="title">
 				<h1>FEATURED NEWS</h1>
 			</section>
 			<section class="featured-news">
-				<div class="featured-1 inline-block float-left">
-					<img src="images/rebirth.png">
-					<h3><span>Experience DC Rebirth</span></h3>
-					<div class="clearfix"></div>
+				<div class="featured-1">
+					<span><h3>Experience DC Rebirth</h3></span>
 				</div>
-				<div class="featured-2 inline-block float-right">
-					<img src="images/awest.png">
-					<h3><span>DC Entertainment Honors Adam West, 1928-2017</span></h3>
-					<div class="clearfix"></div>
-				</div>
-				<div class="featured-3 inline-block float-right">
-					<img src="images/75yrs.png">
-					<h3><span>Wonder Woman: 75 Years of Heroics</span></h3>
-					<div class="clearfix"></div>
+				<div class="featured-2">
+					<div>
+						<h3><span>DC Entertainment Honors Adam West, 1928-2017</span></h3>
+					</div>
+					<div>
+						<h3><span>Wonder Woman: 75 Years of Heroics</span></h3>
+					</div>
 				</div>
 			</section>
 
@@ -60,20 +51,22 @@
 				<h1>COMIC NEWS</h1>
 			</section>
 			<section class="comic-news">
-			<div class="comic-1 inline-block">
-				<a href="#" onclick="return false;"> <img class="comic-1" src="images/Titans-12.png"></a>
-				<h2>Titans: Rebirth <br>#12</h2>
-				<p>BY BAMBINONI ON JUNE 18, 2017</p>
-			</div>
-			<div class="comic-2 inline-block">
-				<a href="#" onclick="return false;"><img src="images/DarkDays.png"></a>
-				<h2>Dark Days: The Forge #1</h2>
-				<p>BY ELENA CARRILLO ON JUNE 14, 2017</p>
-			</div>
-			<div class="comic-3 inline-block">
-				<a href="#" onclick="return false;"><img src="images/WW24.png"></a>
-				<h2>WONDER WOMAN #24</h2>
-				<p>BY AMBER PITCHER ON JUNE 12, 2017</p>
+			<div class="comics">
+				<div class="comic">
+					<img src="images/Titans-12.png">
+					<h2>Titans: Rebirth <br>#12</h2>
+					<p>BY BAMBINONI ON JUNE 18, 2017</p>
+				</div>
+				<div class="comic">
+					<img src="images/DarkDays.png">
+					<h2>Dark Days: The Forge #1</h2>
+					<p>BY ELENA CARRILLO ON JUNE 14, 2017</p>
+				</div>
+				<div class="comic">
+					<img src="images/WW24.png">
+					<h2>WONDER WOMAN #24</h2>
+					<p>BY AMBER PITCHER ON JUNE 12, 2017</p>
+				</div>
 			</div>
 			<div class="comic-review">
 				<p>Check out the reviews for the latest comic releases!</p>
@@ -86,19 +79,22 @@
 				<h1>MOVIE NEWS</h1>
 			</section>
 			<section class="movie-news">
-				<img class="movie-1 inline-block" src="images/wonderbanner.png">
-			<div class="movie-2 inline-block">
-				<img src="images/wonderbook.png">
-				<h3><span class="movie-span">Wonder Woman: The Art and Making of the Film</span></h3>
-			</div>
-			<div class="movie-3 inline-block">
-				<img src="images/sirens.png">
-				<h3><span class="movie-span">Casting Rumors: Gotham City Sirens</span></h3>
-			</div>
-			<div class="movie-4 inline-block">
-				<img src="images/jl.png">
-				<h3><span class="movie-span">In theatres November 17, 2017</span></h3>
-			</div>
+				<div class="movie-1">
+				</div>
+				<div class="movie-2">
+					<div>
+						<img src="images/wonderbook.png">
+						<h3><span class="movie-span">Wonder Woman: The Art and Making of the Film</span></h3>
+					</div>
+					<div>
+						<img src="images/sirens.png">
+						<h3><span class="movie-span">Casting Rumors: Gotham City Sirens</span></h3>
+					</div>
+					<div>
+						<img src="images/jl.png">
+						<h3><span class="movie-span">In theatres November 17, 2017</span></h3>
+					</div>
+				</div>	
 			<img class="transww" src="images/transww.png" height="510">
 			</section>
 
@@ -107,18 +103,16 @@
 				<h1>TV NEWS</h1>
 			</section>
 			<section class="tv-news">
-				<div class="tv-1 inline-block float-left">
-					<iframe width="720" height="570" src="https://www.youtube.com/embed/dIU5Gbomoeo" frameborder="0" allowfullscreen></iframe>
-					<div class="clearfix"></div>
+				<div class="tv-1">
+					<iframe src="https://www.youtube.com/embed/dIU5Gbomoeo" frameborder="0" allowfullscreen></iframe>
 				</div>
-				<div class="tv-2 inline-block float-right">
-					<iframe width="310" height="270" src="https://www.youtube.com/embed/26b2upvIEec" frameborder="0" allowfullscreen></iframe>
-					<div class="clearfix"></div>
-				</div>
-				<div class="tv-3 inline-block float-right">
-					<img src="images/supergirl.png">
-					<h3><span class="tv-span">New Season Out Now!</span></h3>
-					<div class="clearfix"></div>
+				<div class="tv-2">
+					<div>
+						<iframe src="https://www.youtube.com/embed/26b2upvIEec" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div>
+						<h3><span class="tv-span">New Season Out Now!</span></h3>
+					</div>
 				</div>
 				<img class="transsg" src="images/transsg.png" height="510">
 			</section>
@@ -128,73 +122,66 @@
 				<h1>GAMING NEWS</h1>
 			</section>
 			<section class="gaming-news">
-				<div class="game-1 inline-block float-left">
-				<a href="#" onclick="return false;"> <img src="images/dcLegends.png"></a>
-				<h2>DC Legends</h2>
-				<p>Mobile App <br> AVAILABLE NOW</p>
-				<button>BUY NOW</button>
-				<div class="clearfix"></div>
-			</div>
-			<div class="game-2 inline-block float-left">
-				<a href="#" onclick="return false;"> <img src="images/telltale.png"></a>
-				<h2>Batman: The Telltale <br>Series</h2>
-				<p>AVAILABLE NOW</p>
-				<button>BUY NOW</button>
-				<div class="clearfix"></div>
-			</div>
-			<div class="game-3 inline-block float-right">
-				<a href="#" onclick="return false;"><img src="images/injustice2.png"></a>
-				<h3><span class="game-span">Injustice 2 - Available Now!</span></h3>
-				<button class="float-right">BUY NOW</button>
-				<div class="clearfix"></div>
-			</div>
+				<div class="game-1">
+					<img src="images/dcLegends.png">
+					<h2>DC Legends</h2>
+					<p>Mobile App <br> AVAILABLE NOW</p>
+					<button>BUY NOW</button>
+				</div>
+				<div class="game-2">
+					<img src="images/telltale.png">
+					<h2>Batman: The Telltale <br>Series</h2>
+					<p>AVAILABLE NOW</p>
+					<button>BUY NOW</button>
+				</div>
+				<div class="game-3">
+					<h3><span>Injustice 2 - Available Now!</span></h3>
+					<button>BUY NOW</button>
+				</div>
 			</section>
 			
 		<!--FOOTER-->
-			<section class="footer">
-				<img class="inline-block" src="images/DCfooter.png">
-				<ul class="sites inline-block float-left">
+			<footer>
+				<div class="sites">
 					<h2>SITES</h2>
-					<a href="#" onclick="return false;"><li>DC</li></a>
-					<a href="#" onclick="return false;"><li>Verigo</li></a>
-					<a href="#" onclick="return false;"><li>MAD Magazine</li></a>
-					<a href="#" onclick="return false;"><li>DC Kids</li></a>
-					<a href="#" onclick="return false;"><li>DC Entertainment</li></a>
-					<div class="clearfix"></div>
-				</ul>
-				<ul class="dc-ent inline-block float-left">
+					<ul>
+						<li>DC</li>
+						<li>Verigo</li>
+						<li>MAD Magazine</li>
+						<li>DC Kids</li>
+						<li>DC Entertainment</li>
+					</ul>
+				</div>	
+				<div class="dc-ent">
 					<h2>DC ENTERTAINMENT</h2>
-					<a href="#" onclick="return false;"><li>About Us</li></a>
-					<a href="#" onclick="return false;"><li>Jobs</li></a>
-					<a href="#" onclick="return false;"><li>Subscriptions</li></a>
-					<a href="#" onclick="return false;"><li>Talent Workshop</li></a>
-					<a href="#" onclick="return false;"><li>Help</li></a>
-					<div class="clearfix"></div>
-				</ul>
-				<form class="newsletter subscribe float-left">
+					<ul>
+						<li>About Us</li>
+						<li>Jobs</li>
+						<li>Subscriptions</li>
+						<li>Talent Workshop</li>
+						<li>Help</li>
+					</ul>
+				</div>
+				<form class="newsletter subscribe">
 					<h2>NEWSLETTER</h2>
 					<input type="text" placeholder="name"><br>
 					<input type="text" placeholder="email"><br>
 					<button>SUBSCRIBE</button>
-					<div class="clearfix"></div>
 				</form>
-			</section>
+			</footer>
 			
-			<footer>
-				<div class="copywrite float-left">
-				<p>All Site Content and © 2017 DC Entertainment, unless otherwise noted here. All rights reserved. &nbsp <a href="#">Terms & Conditions</a> &nbsp <a href="#">Privacy Policy</a></p>
-				<div class="clearfix"></div>
+			<div class="sub-footer">
+				<div class="copywrite">
+					<p>All Site Content and © 2017 DC Entertainment, unless otherwise noted here. All rights reserved.&nbsp <a href="#">Terms & Conditions</a> &nbsp <a href="#">Privacy Policy</a></p>
 				</div>
 	
-				<div class="follow-us inline-block float-right">
-				<h2 class="inline-block">FOLLOW US</h2>
-				<a class="inline-block" href="https://www.facebook.com/dccomics"><img src="images/fbicon.png" height="30"></a>
-				<a href="http://www.dccomics.com/twitter-directory"><img src="images/twittericon.png" height="30"></a>
-				<a href="https://www.youtube.com/user/DCEntertainmentTV"><img src="images/yticon.png" height="30"></a>
-				<div class="clearfix"></div>
+				<div class="follow-us">
+					<h2>FOLLOW US</h2>
+					<a href="https://www.facebook.com/dccomics"><img src="images/fbicon.png"></a>
+					<a href="http://www.dccomics.com/twitter-directory"><img src="images/twittericon.png"></a>
+					<a href="https://www.youtube.com/user/DCEntertainmentTV"><img src="images/yticon.png"></a>
 				</div>
-			</footer>
+			</div>	
 
-	</div>
 </body>
 </html>
